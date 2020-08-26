@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './cart.css'
 const Products = ({producto, cart, addProductToCart, products}) => {
     const {id, nombre, precio} = producto
     //crear funcion para añadir al carrito
@@ -15,7 +15,7 @@ const Products = ({producto, cart, addProductToCart, products}) => {
     }
 
     return (
-        <div>
+        <div className='products'>
             <h2>{nombre}</h2>
             <p>${precio}</p>
             {products?
